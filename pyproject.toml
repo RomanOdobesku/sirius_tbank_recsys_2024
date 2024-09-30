@@ -1,0 +1,25 @@
+[project]
+name = "sirius_tbank_recsys_2024"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "", email = ""},
+]
+dependencies = [
+    "rectools[lightfm,torch,visuals]>=0.8.0",
+    "lightgbm>=4.5.0",
+    "seaborn>=0.13.2",
+    "shap>=0.46.0",
+]
+requires-python = "==3.10.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "notebook>=7.2.2",
+]
